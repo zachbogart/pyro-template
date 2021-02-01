@@ -1,4 +1,5 @@
-
+# pyrex-usage-example
+Example of using a base image on DockerHub to work in Jupyter with Python or R.
 
 ## 01 Build Project Docker Image
 Execute at root of project directory:
@@ -17,7 +18,7 @@ docker run -p 8888:8888 -v $PWD:/project pyrex_example:latest
 ```
 ### Opening Jupyter
 1. In output, will see several links. The one starting with `http://127.0.0.1:8888` should work fine
-3. You can now execute code, running notebooks in Python or R!
+2. You can now execute code, running notebooks in Python or R!
 
 ### Notes
 - Local host port (left of the colon) is set to `8888`. Can be changed if desired. Docker-level port (right of the colon) must be set to `8888` according to Dockerfile.
