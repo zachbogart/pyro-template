@@ -1,6 +1,6 @@
 # pyrex-usage-example
 Example of using a base image on DockerHub to work in Jupyter with Python or R.
-- Uses `main` image from [zachbogart/pyrex](https://github.com/zachbogart/pyrex)
+- Uses `classic` image from [zachbogart/pyrex](https://github.com/zachbogart/pyrex)
 - Base images available on [DockerHub](https://hub.docker.com/r/zachbogart/pyrex)
 
 # Give pyrex a try!
