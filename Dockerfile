@@ -1,4 +1,4 @@
-FROM zachbogart/pyrex:main
+FROM zachbogart/pyrex:classic
 
 # define project directory and move everything over
 ENV PROJECT_DIR /project
