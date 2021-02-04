@@ -1,6 +1,6 @@
 # pyrex-usage-example
 Example of using a base docker container on DockerHub to work in Jupyter with Python or R.
-- Uses `vanilla` image from [zachbogart/pyrex](https://github.com/zachbogart/pyrex)
+- Uses `vanilla` pyrex container from [zachbogart/pyrex](https://github.com/zachbogart/pyrex)
 - Base images available on [DockerHub](https://hub.docker.com/r/zachbogart/pyrex)
 
 # Give pyrex a try!
@@ -34,7 +34,7 @@ docker run -p 8899:8888 -v $PWD:/project pyrex_example:latest
 - Connects local instance of project as a volume to the docker image (`-v $PWD:/project`). Anything you do while in jupyter will update your local files.
 
 ## Play!
-- You are now running a jupyter notebook inside a docker image! Feel free to run the code or make your own notebooks. All work will be consistent across different users (hooray, docker) and since we defined a volume, your work will affect your local files rather than just being ephemeral. 
+- You are now running a jupyter notebook inside a docker image! Feel free to run the code or make your own notebooks. All work will be reproducible across different users (hooray, docker) and since we defined a volume, your work will affect your local files rather than just being ephemeral. 
 - This should help other people to go through your code, allowing them to execute it in the same environment you built it. Or it could just allow people to run your scripts without the hassle of installing a bunch of stuff.
 
 ### Extensions are your friend
@@ -46,7 +46,7 @@ docker run -p 8899:8888 -v $PWD:/project pyrex_example:latest
     - `spellchecker`: highlights misspelled words as you type a markdown cell
     - `Initialization cells`: Mark cells that can be run all at once with the push of a button or on startup
 - You can manually enable these extensions every time you `docker run ...` or [enable them through commands](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html#enabling-disabling-extensions) in the project Dockerfile once you have a set you prefer (see `vanilla_swirl` Dockerfile for an example).
-    - *Note: the nbextension tab is present because it is installed in the pyrex image.*
+    - *Note: the nbextension tab is present because it is installed in pyrex container.*
 
 ***
 
