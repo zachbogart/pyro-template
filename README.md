@@ -4,10 +4,7 @@ Example of using a base docker container on DockerHub to work in Jupyter with Py
 - Containers available on [DockerHub](https://hub.docker.com/r/zachbogart/pyrex)
 
 ## Workflow (TL;DR)
-```
-    # clone repo
-    git clone https://github.com/zachbogart/pyrex-usage-example.git
-    
+``` 
     # build pyrex container
     docker build --force-rm . -t pyrex_example:latest
     
