@@ -17,6 +17,14 @@ Example of using a base docker container on DockerHub to work in Jupyter with Py
 
 ***
 
+# Use this repo as a template 
+- If you want to get started with your own thing, just make a new repo using this one as a template (the big "Use this template" button will get you going).
+- If you want more explanation, see the walkthrough below.
+
+### Notes
+- For the template peeps, you should: 
+    - update the workflow section above with your new docker tag
+
 # Give pyrex a try! (Walkthrough)
 - This setup uses a base docker container that has Python and R wrapped in with Jupyter. Work in jupyter notebooks with your favorite language!
 - **Note**: Docker builds will use ~1-2 GB disk space
