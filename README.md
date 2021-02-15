@@ -28,7 +28,7 @@ Example of using a base docker container on DockerHub to work in Jupyter with Py
 ```
     docker build --force-rm . -t pyrex_example:latest
 ```
-- It will go get the base container from DockerHub and build it for you (will take a few minutes).
+- It will go get the base container from DockerHub and build it for you (won't take long).
 - Using `<PROJECT_NAME>:latest` as an example image naming convention.
 
 ## 02 Run Project
